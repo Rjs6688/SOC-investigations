@@ -1,0 +1,53 @@
+# FAILED LOGIN ANALYSIS
+## Objective 
+Investigate failed Windows login attempts using Windows Security Event logs to identify suspicious authentication activity aand understand how a SOC analyst would detect potential brute-force attacks.
+---
+
+##Scenario
+A windows system generated multiple failed login events.The objective is to anlyze the security logs,determine the affected user account,identify the source of the login attempts, and assess whether the activity appears suspicious.
+---
+
+## Data Source
+-Windows Security Event logs
+-Event ID:4625 (Failed Logon)
+---
+
+## Investigation Steps
+1.Open Windows Security Event Logs.
+2.Filter for Event ID 4625.
+3.identify the username involved.
+4.Review the timestamp of each failed login.
+5.Check the source IP address or workstation name(if available).
+6.Determine whether multiple failed attempts indicate suspicious activity.
+---
+
+### Findings
+-Event ID 4625 records failed logon attempts.
+-Repeated failures against the same account may indicate password.
+-Failed login events should be correlated with successful login events (Event ID 4624) for further analysis
+---
+
+### Detection oppurtunities
+-Multiple failed logins within a short period
+-repeated failures from the same siurce
+-Failures outside normal working hours
+-Attempts against privileged accounts.
+---
+
+### MITRE ATT&CK Mapping
+-T1110-Brute Force
+---
+
+### Recommendations
+-Monitor repeated failed login attempts.
+-Configure account lockout policies.
+-Enable alerting for excessive authentication failures.
+-Review logs regularly using a SIEM such as Splunk or Microsoft Sentinel.
+
+---
+
+###Skills Demonstrated
+-Windows Event log Analysis
+-Security log Investigation
+-Authentication Analysis
+-Threat Detection
