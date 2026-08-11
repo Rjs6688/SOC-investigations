@@ -1,6 +1,6 @@
 # FAILED LOGIN ANALYSIS
 ## Objective 
-Investigate failed Windows login attempts using Windows Security Event logs to identify suspicious authentication activity aand understand how a SOC analyst would detect potential brute-force attacks.
+Investigate the failed Windows login attempts using Windows Security Event logs to identify suspicious authentication activity aand understand how a SOC analyst would detect potential brute-force attacks.
 ---
 
 ##Scenario
