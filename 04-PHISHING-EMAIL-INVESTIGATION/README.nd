@@ -1,0 +1,61 @@
+# PHISHING EMAIL INVESTIGATION
+
+## Objective
+
+Investigate a suspected phishing email to identify indicators of compromise (IOCs), analyze the sender and URLs, determine the potential risk to the recipient, and assess the activity using MITRE ATT&CK.
+
+## Data Source
+
+Simulated phishing email and associated indicators created for cybersecurity training and portfolio purposes.
+
+## Investigation Steps
+
+1. Review the email header information.
+2. Identify the sender and recipient.
+3. Analyze the sender domain.
+4. Extract URLs and email addresses.
+5. Examine suspicious attachments, if present.
+6. Identify indicators of compromise.
+7. Assess the likelihood of phishing activity.
+8. Map the observed behavior to MITRE ATT&CK.
+9. Document findings and recommended security actions.
+
+### Findings
+
+_To be completed after analysis of the evidence._
+
+### Indicators of Compromise
+
+_To be identified during investigation._
+
+### Detection Opportunities
+
+- Monitor suspicious sender domains.
+- Detect malicious or suspicious URLs in email messages.
+- Scan email attachments.
+- Alert on known malicious indicators.
+- Correlate email activity with endpoint and network events.
+
+### MITRE ATT&CK Mapping
+
+_To be completed after analysis._
+
+### Recommendations
+
+- Avoid opening suspicious links or attachments.
+- Report suspected phishing emails to the security team.
+- Block confirmed malicious domains and URLs.
+- Monitor affected users for subsequent suspicious activity.
+- Use email security controls and URL/attachment scanning.
+
+---
+
+### Skills Demonstrated
+
+- Phishing Investigation
+- Email Analysis
+- IOC Identification
+- URL Analysis
+- Threat Detection
+- MITRE ATT&CK Mapping
+- SOC Investigation
